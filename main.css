@@ -1,10 +1,59 @@
 body {
+  /* padding: 20px 20px; */
+  margin: 0px;
   font-family: monospace;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgba(122, 177, 187, 0.514);
   font-weight: 300;
+  font-size: 16px;
+    overflow: hidden;
 }
 
+.p-info{
+  background-image:  url(../KMoloto-web/assets/BG1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+}
+
+.nav-header{
+  text-align: center;
+  height: 50%;
+}
+.nav >a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav>a:hover{
+  color: rgb(189, 219, 105);
+  border-bottom: 1px solid rgb(37, 97, 2);
+}
+.nav>a:active{
+  color: aquamarine;
+  border-bottom: 1px solid rgba(122, 177, 187, 0.514);
+}
+
+section
+{
+  padding: 20px 20px;
+  color: rgb(37, 97, 2);
+}
+.gri-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+.left-col{
+  background-color: brown;
+}
+
+.right-col{
+  background-color: blueviolet;
+}
 .social-icon {
   position: fixed;
   right: 0;
@@ -19,8 +68,13 @@ body {
   padding: 5px;
 }
 
-.social-nav li > a {
+.social-nav li > a , .more-info>a{
   text-decoration: none;
+}
+.more-info>a{
+  background-color: rgb(189, 219, 105);
+  border-radius: 5px 5px;
+  padding: 5px 5px;
 }
 
 .footer-content {
