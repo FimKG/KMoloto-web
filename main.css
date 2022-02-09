@@ -1,83 +1,199 @@
 body {
-  /* padding: 20px 20px; */
   margin: 0px;
   font-family: monospace;
   color: rgb(255, 255, 255);
-  background-color: rgba(122, 177, 187, 0.514);
+  background-color: rgb(6, 19, 33, 0.5);
   font-weight: 300;
   font-size: 16px;
-    overflow: hidden;
+  overflow-x: hidden;
 }
 
-.p-info{
-  background-image:  url(../KMoloto-web/assets/BG1.jpg);
+.p-info {
+  background-image: url(/assets/BG1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  position: relative;
+  background-position: center;
   height: 100vh;
 }
 
-.nav-header{
-  text-align: center;
-  height: 50%;
+/* page-header */
+header {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px -35px;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  z-index: 1000;
+  padding: 40px 40px 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.nav >a{
+
+header>a {
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+header>.name {
+  position: relative;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  font-size: 2.3rem;
+  z-index: 1000;
+}
+
+/* Section */
+section {
+  display: block;
+  padding: 20px 20px;
+  color: rgb(196, 192, 192);
+  height: 937px;
+}
+
+.head {
+  color: #fff;
+  position: absolute;
+  overflow: hidden;
+  top: 30%;
+  z-index: 200;
+  margin-left: 11%;
+}
+
+
+
+.heading {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+header>.page-header {
+  display: flex;
+  position: relative;
+}
+
+header>.nav-header>a {
+  display: block;
+  margin-right: 3.2rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
+}
+
+.nav-header {
+  margin-right: 0px;
+}
+
+.nav-link>a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  list-style: none;
   font-size: 25px;
 }
 
-.nav>a:hover{
+nav>a:hover {
   color: rgb(189, 219, 105);
   border-bottom: 1px solid rgb(37, 97, 2);
 }
-.nav>a:active{
-  color: aquamarine;
+
+nav>a:active {
+  color: rgb(127, 255, 212);
   border-bottom: 1px solid rgba(122, 177, 187, 0.514);
 }
 
-section
-{
-  padding: 20px 20px;
-  color: rgb(37, 97, 2);
-}
-.gri-cont{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-}
-.left-col{
-  background-color: brown;
+.sec_text {
+  font-size: 6.5rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.6rem;
+  text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
 }
 
-.right-col{
-  background-color: blueviolet;
+.btn-info {
+  text-align: center;
+  margin-top: 3rem;
+  text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
+  border-radius: 25px;
+  background: rgb(216, 86, 68);
+  display: inline-block;
+  transition: 0.3s;
+  padding: 16px 18px;
 }
+
+.btn-info>a {
+  color: rgb(255, 255, 255);
+  font-size: 1.0rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.border {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+.border span {
+  display: block;
+  width: 70px;
+  height: 3px;
+  border-radius: 5px;
+  background: rgb(210, 255, 104);
+}
+
+.border span:first-child {
+  margin-bottom: 1.4rem;
+}
+
+/* Right Icon Link Display */
 .social-icon {
+  /* display: flex;
+  flex-direction: column; */
   position: fixed;
   right: 0;
+  top: 0;
+  background-color: rgb(216, 86, 68);
 }
-.social-nav ul {
+
+.social-nav a {
   padding: 0px;
   background-color: aqua;
+  text-decoration: none;
+  list-style: none;
+  
 }
+.social-nav a {
+  display: inline-flex;
+}
+
+/* .social-icon {
+  position: fixed;
+  right: 0;
+  float: right;
+  z-index: -1;
+} */
+/* 
+
+
 .social-nav li {
   margin: 5px;
   display: block;
   padding: 5px;
 }
 
-.social-nav li > a , .more-info>a{
+.social-nav li>a {
   text-decoration: none;
-}
-.more-info>a{
-  background-color: rgb(189, 219, 105);
-  border-radius: 5px 5px;
-  padding: 5px 5px;
-}
+} */
 
+/* About me */
+
+/* Get In Touch */
+
+/* footer */
 .footer-content {
+
   bottom: 0;
   text-align: center;
   width: 100%;
@@ -85,4 +201,9 @@ section
   position: fixed;
   padding: 25px 0px;
   font-weight: 700;
+
+}
+
+.footer-text {
+  color: rgb(84, 105, 121);
 }
