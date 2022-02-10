@@ -211,18 +211,20 @@ float: left;
   list-style: none; */
   display: inline-flex;
 }
-.social-nav a:hover {
-transition: 0.3s;
+.social-nav li a  {
 
-  text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
-
-
+  border: 1px solid rgb(216, 86, 68);
+}
+.social-nav li a img:hover  {
+  position: absolute;
+  right:20;
+  /* text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5); */
+  transition: 0.3s;
 }
 .social-nav {
   /* display: flex; */
   padding-right: 20%;
   gap: 10px;
-
 }
 
 .social-nav a{
@@ -256,10 +258,9 @@ transition: 0.3s;
 /* footer */
 .footer-content {
 
-  /* bottom: 0; */
+  bottom: 0;
   text-align: center;
   width: 100%;
-  /* left: 0; */
   position: fixed;
   padding: 25px 0px;
   font-weight: 700;
