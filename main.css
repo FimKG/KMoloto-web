@@ -173,7 +173,7 @@ font-size: 14px;
   display: table;
 }
 
-.left, .right{
+.left, .right, .column{
 width: 50%;
 float: left;
 }
@@ -230,6 +230,11 @@ float: left;
 .social-nav a{
   box-shadow: 5px 10px #222121;
   border-radius: 25px;
+}
+
+.column > .content > img{
+  width: 80%;
+  height: 400px;
 }
 
 /* .social-icon {
