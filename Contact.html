@@ -46,41 +46,67 @@
 
             <section class="Contact" id="Contact">
                 <!-- <div class="head"> -->
-                <h2 class="sec_text">Educatinal Experience</h2>
+                <h2 class="sec_text">Get In Touch</h2>
                 <div class="border"><span></span></div>
                 <div class="more-info">
-                    <div class="container">
+
+                    <div class="container" >
+                       
                         <div class="row">
-                            <div class="heading">
-                                Form
-                                <form action="" class="contac-form">
-                                    <div class="form-group">
-                                        <label for="">Name:
-                                            <input type="text" name="name">
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Contact No:
-                                            <input type="text" name="contactNo">
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Email:
-                                            <input type="text" name="email">
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Contact No:
-                                            <input type="text" name="contactNo">
-                                        </label>
-                                    </div>
-                                    <button type="submit">Submit</button>
-                                </form>
+                            <div class="col-lg-7 px-md-5">
+                                <div class="form-div mt-30">
+                                    <form class="repair-info" id="contact-form" action="assets/php/send_mail.php"
+                                        method="POST" enctype="multipart/form-data">
+                                        <div class="mini-top form-row">
+                                            <div class="mini-right col-xl">
+                                                <div class="form-heading">
+                                                    CONTACT DETAILS
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Your Name" data-form-field="name" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="email" id="email"
+                                                        placeholder="Your Email" data-form-field="email" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="phone" id="phone"
+                                                        placeholder="Phone Number" data-form-field="phone" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                        placeholder="Subject" data-form-field="subject" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mini-right ">
+                                            <div class="form-heading">
+                                                Brief on For Your Request
+                                            </div>
+                                            <div class="pb-2"></div>
+                                            <span class="filesToUploader"></span>
+                                            <div class="mini-left row">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea type="text" rows="3" class="form-control" name="message"
+                                                    id="message" placeholder="Additional Information"
+                                                    data-form-field="Message"></textarea>
+                                            </div>
+                                            <div class="submit">
+                                                <span class="status"></span>
+                                                <button class="btn btn-primary btn-block" id="btnSend">Send</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <!-- </div> -->
+
             </section>
 
 
