@@ -142,7 +142,7 @@ nav a:focus {
   margin-left: 11%;
 }
 .sec__title {
-  font-size: 10rem;
+  font-size: 9rem;
   letter-spacing: 0.1em;
   line-height: 1;
   margin-bottom: 1.6rem;
@@ -298,22 +298,34 @@ font-size: 3rem;
   clear: both;
   display: table;
 }
-.left,
+/* .left,
 .right,
 .column {
   width: 45%;
   float: left;
-}
-.right, .left-img{
+} */
+.right__border, .left-img{
   border-left: rgb(210, 255, 104) solid 2px;
   padding: 20px;
+}
+strong {
+  color: rgb(189, 219, 105);
 }
 .description {
   transition: 0.3s;
 }
 /* Contact */
-
-.heading .title-head{
+.form-group{
+  color: #313437;
+}
+.form-control {
+  border-radius: 0;
+  border-color: #ccc;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  background-color: inherit;
+}
+h2 .heading ,.title-head{
   font-size: 2.5rem;
 }
 .heading a{
