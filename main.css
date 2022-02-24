@@ -79,6 +79,9 @@ nav a:focus {
   .sec__title {
     font-size: 7.6rem !important;
   }
+  .sec__head {
+    font-size: 7.6rem !important;
+  }
   .nav-link {
     display: flex;
     margin: 0;
@@ -139,13 +142,23 @@ nav a:focus {
   margin-left: 11%;
 }
 .sec__title {
-  font-size: 12rem;
+  font-size: 10rem;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-bottom: 1.6rem;
+  text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+}
+.sec__head {
+  font-size: 7rem;
   letter-spacing: 0.1em;
   line-height: 1;
   margin-bottom: 1.6rem;
   text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
 }
 
+.title__lead{
+font-size: 3rem;
+}
 /* Social Media Icons */
 
 .social-icon {
@@ -216,6 +229,52 @@ nav a:focus {
   margin-bottom: 1.4rem;
 }
 
+/* Gallary */
+
+.photo-gallery {
+  color:#313437;
+  background-color:#fff;
+}
+
+.photo-gallery p {
+  color:#7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom:0;
+}
+
+.photo-gallery .photos {
+  padding-bottom:20px;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
+
+
+
 /* About */
 
 .img__over{
@@ -254,6 +313,12 @@ nav a:focus {
 }
 /* Contact */
 
+.heading .title-head{
+  font-size: 2.5rem;
+}
+.heading a{
+  color: rgb(147 18 0);
+}
 .Contact{
   background-image: url(assets/imgs/Image32.png);
   background-repeat: no-repeat;
@@ -264,7 +329,7 @@ nav a:focus {
 }
 /* footer */
 .footer-content {
-  bottom: 0;
+  /* bottom: 0; */
   text-align: center;
   width: 100%;
   position: absolute;
