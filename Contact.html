@@ -6,50 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+
     <header>
-        <!-- <div class="page-nav"> -->
-            <a href="#" class="name active">Moloto KA</a>
-            <div class="page-header nav-header">
-                <nav class="nav-link">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Portfolio.html">Portfolio</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand name" href="/">Moloto KA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <p class="navbar-nav mr-auto"></p>
+                <ul class="navbar-nav ">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li><a class="nav-link" href="About.html">About</a></li>
+                    <li><a class="nav-link" href="Portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
             </div>
-        <!-- </div> -->
+        </nav>
     </header>
 
     <main class="p-info">
         <section class="home" id="#">
             <div class="title">
                 <h1 class="sec__title">Moloto <br>K.A</h1>
-                <div class="border"><span></span></div>
+                <div class="__border"><span></span></div>
                 <p class="title__lead">Front-End web Development /<br> Graphic Design</p>
             </div>
         </section>
 
-            <section class="Contact" id="Contact">
-
-                <h2 class="sec__title">Contact me</h2>
-                <div class="border"><span></span></div>
-                <div class="more-info">
-                    <p class="heading">Front-End web Development and Graphic Design</p>
-                    <div class="btn-info"><a href="About.html">Show More</a></div>
-                </div>
-
-            </section>
-
-            <section class="Contact " id="Contact">
-
-                <h2 class="sec__title">Get In Touch</h2>
-                <div class="border"><span></span></div>
+        <section class="Contact" id="Contact">
+            <h2 class="sec__head">Get In Touch</h2>
+            <div class="__border"><span></span></div>
                 <div class="more-info">
 
                     <div class="container photo-gallery">
@@ -113,13 +107,13 @@
 
             <div class="social-icon">
                 <ul class="social-nav">
-                    <li><a href="https://github.com/FimKG"><img src="assets/icons/github.png" alt=""></a></li>
+                    <li><a href="https://github.com/FimKG"><img src="github.png" alt=""></a></li>
                     <li><a href="https://www.linkedin.com/in/kgaugelo-moloto-11603896/"><img
-                                src="assets/icons/linkedin.png" alt=""></a></li>
-                    <li><a href="https://twitter.com/kgaugelob82"> <img src="assets/icons/twitter.png" alt=""></a>
+                                src="linkedin.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/kgaugelob82"> <img src="twitter.png" alt=""></a>
                     </li>
-                    <li><a href="https://wa.me/27794102763"> <img src="assets/icons/whatsapp.png" alt=""></a></li>
-                    <li><a href="https://www.facebook.com/kgaugelob82/"> <img src="assets/icons/facebook.png"
+                    <li><a href="https://wa.me/27794102763"> <img src="whatsapp.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/kgaugelob82/"> <img src="facebook.png"
                                 alt=""></a></li>
                 </ul>
             </div>
@@ -127,11 +121,15 @@
 
 
 
-    <div class="footer-content">
-        <p class="footer-text"> &copy; Kgaugelo’s portfolio. All Rights Reserved - 2022</p>
-    </div>
+            <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+                <div class="container text-center">
+                  <small><p class="footer-text"> &copy; Kgaugelo’s portfolio. All Rights Reserved - 2022</p></small>
+                </div>
+              </footer>
   </main>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
